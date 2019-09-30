@@ -2,15 +2,11 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "@/views/Home.vue";
 import Profile from "@/views/Profile.vue";
-import CreateEvent from "@/views/CreateEvent.vue";
-import Friends from "@/views/Friends.vue";
 import EventDetails from "@/components/EventDetails.vue";
 import DashBoard from "@/views/DashBoard.vue";
 import SignUpModal from "@/components/SignUpModal.vue";
 import LogInModal from "@/components/LogInModal.vue";
 import Listing from "@/views/Listing.vue";
-import About from "@/views/About.vue";
-import NotFound from "@/views/NotFound.vue";
 
 
 Vue.use(Router);
@@ -77,29 +73,9 @@ export default new Router({
       ]
     },
     {
-      path: "/create",
-      name: "Create",
-      component: CreateEvent
-    },
-    {
-      path: "/friends",
-      name: "friends",
-      component: Friends
-    },
-    {
-      path: "/about",
-      name: "about",
-      component: About
-    },
-    {
       path: "/dashboard",
       name: "Dashboard",
       component: DashBoard
-    },
-    {
-      path: '*',
-      name: "NotFound",
-      component: NotFound
     }
   ]
 });
