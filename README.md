@@ -1,4 +1,4 @@
-# Konnect
+# Vue Node Express Axios Knex 
 
 ## Project setup
 At the root directory, run `npm install` for server side dependencies
